@@ -1,17 +1,15 @@
-const toggle = document.getElementById("themeToggle");
-const html = document.documentElement;
+const toggle = document.getElementById('themeToggle');
+const body = document.body;
 
-const applyTheme = (theme) => {
-  html.setAttribute("data-theme", theme);
-  toggle.innerHTML = theme === "dark" ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-  localStorage.setItem("theme", theme);
+const setTheme = (theme) => {
+  body.setAttribute('data-theme', theme);
+  toggle.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+  localStorage.setItem('theme', theme);
 };
 
-// Default to Dark Mode for security aesthetic
-const savedTheme = localStorage.getItem("theme") || "dark";
-applyTheme(savedTheme);
+setTheme(localStorage.getItem('theme') || 'light');
 
-toggle.onclick = () => {
-  const current = html.getAttribute("data-theme");
-  applyTheme(current === "dark" ? "light" : "dark");
-};
+toggle.addEventListener('click', () => {
+  const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  setTheme(newTheme);
+});
