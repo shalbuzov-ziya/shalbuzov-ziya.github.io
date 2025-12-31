@@ -6,131 +6,151 @@
   <title>Ziya Shalbuzov | Security Researcher</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-theme="dark">
-  <nav class="top-nav">
-    <div class="nav-inner">
-      <div class="logo">ZIYA<span>.</span>SEC</div>
+<body data-theme="light">
+  <nav class="navbar">
+    <div class="nav-container">
       <div class="nav-links">
         <a href="#home">Home</a>
-        <a href="#inventory">Credentials</a>
-        <a href="#research">Research</a>
+        <a href="#work">Work</a>
+        <a href="#certs">Credentials</a>
+        <a href="#writeups">Research</a>
       </div>
-      <button id="themeToggle" class="theme-btn">☀️</button>
+      <button id="themeToggle" class="theme-switch">🌙</button>
     </div>
   </nav>
 
-  <main class="container">
-    <section id="home" class="bento-grid">
-      
-      <div class="bento-card profile-main">
-        <div class="badge"><span class="dot"></span> Available for Opportunities</div>
-        <h1>Securing systems as <span class="gradient-text">Ziya Shalbuzov</span></h1>
-        <p class="hero-text">Cybersecurity Student at <strong>Baku State University</strong> & Security Researcher on <strong>HackerOne</strong>. Specializing in Linux hardening and vulnerability research.</p>
-        
-        <div class="social-grid">
-          <a href="mailto:ziyashuov@gmail.com" class="social-item"><i class="fas fa-envelope"></i><span>Email</span></a>
-          <a href="https://github.com/shalbuzov-ziya" target="_blank" class="social-item"><i class="fab fa-github"></i><span>GitHub</span></a>
-          <a href="https://www.linkedin.com/in/z1ya/" target="_blank" class="social-item"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
-          <a href="https://www.instagram.com/shalbuzov_ziya" target="_blank" class="social-item"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+  <main class="content-wrapper">
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="status-badge">
+          <span class="status-dot"></span> Available for work
+        </div>
+        <h1>Hey, I'm Ziya</h1>
+        <p class="bio">
+          19 year old <strong>Security Researcher</strong> & Cybersecurity Student at Baku State University, 
+          exploring vulnerability research and defensive architecture.
+        </p>
+        <div class="hero-actions">
+          <a href="mailto:ziyashuov@gmail.com" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+          <a href="https://github.com/shalbuzov-ziya" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/z1ya/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/shalbuzov_ziya" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
-
-      <div class="bento-card tech-stack">
-        <h3>Technical Arsenal</h3>
-        <div class="tag-cloud">
-          <span>Linux</span> <span>Python</span> <span>Bash</span> 
-          <span>Nmap</span> <span>Burp Suite</span> <span>Git</span> 
-          <span>Networking</span> <span>Forensics</span>
-        </div>
-      </div>
-
-      <div class="bento-card status-card">
-        <div class="status-icon"><i class="fas fa-shield-virus"></i></div>
-        <div>
-          <h4>Current Focus</h4>
-          <p>TETYM Cybersecurity Program (2025-2026)</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="inventory" class="section-padding">
-      <h2 class="section-label">Verified Credentials</h2>
-      <div class="certs-grid">
-        <div class="cert-item">
+      <div class="hero-right">
+        <div class="avatar-circle">
           <i class="fas fa-user-shield"></i>
-          <div><p>CAPT</p><span>Hackviser</span></div>
         </div>
-        <div class="cert-item">
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <p class="label">Experience</p>
+      <h2 class="section-title">Professional Background</h2>
+      <div class="work-entry">
+        <div class="entry-header">
+          <h3>HackerOne</h3>
+          <span class="date">Dec 2025 — Present</span>
+        </div>
+        <p class="role">Security Researcher (Freelance)</p>
+        <ul class="bullet-list">
+          <li>Conducting independent vulnerability research and reporting through coordinated disclosure.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certs" class="section">
+      <p class="label">Verified</p>
+      <h2 class="section-title">Certifications & Training</h2>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <i class="fas fa-shield-alt"></i>
+          <div class="cert-info">
+            <span class="cert-name">CAPT</span>
+            <span class="cert-issuer">Hackviser</span>
+          </div>
+        </div>
+        <div class="cert-card">
           <i class="fas fa-network-wired"></i>
-          <div><p>IT Essentials</p><span>Network Training Center</span></div>
+          <div class="cert-info">
+            <span class="cert-name">IT Essentials</span>
+            <span class="cert-issuer">Network Training Center</span>
+          </div>
         </div>
-        <div class="cert-item">
-          <i class="fas fa-brain"></i>
-          <div><p>Problem Solving</p><span>HackerRank</span></div>
+        <div class="cert-card">
+          <i class="fas fa-code"></i>
+          <div class="cert-info">
+            <span class="cert-name">Problem Solving (Basic)</span>
+            <span class="cert-issuer">HackerRank</span>
+          </div>
         </div>
-        <div class="cert-item">
-          <i class="fas fa-mask"></i>
-          <div><p>CPPS</p><span>Phishing Specialist</span></div>
+        <div class="cert-card">
+          <i class="fas fa-user-secret"></i>
+          <div class="cert-info">
+            <span class="cert-name">CPPS</span>
+            <span class="cert-issuer">Phishing Specialist</span>
+          </div>
         </div>
-        <div class="cert-item">
-          <i class="fas fa-snowflake"></i>
-          <div><p>Advent of Cyber</p><span>TryHackMe</span></div>
-        </div>
-        <div class="cert-item">
+        <div class="cert-card">
           <i class="fas fa-search"></i>
-          <div><p>Forensics</p><span>Intro Level</span></div>
+          <div class="cert-info">
+            <span class="cert-name">Digital Forensics</span>
+            <span class="cert-issuer">Introduction</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-snowflake"></i>
+          <div class="cert-info">
+            <span class="cert-name">Advent of Cyber</span>
+            <span class="cert-issuer">TryHackMe</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="research" class="section-padding">
-      <h2 class="section-label">Write-ups & Research</h2>
-      <div class="research-grid">
-        <a href="https://shalbuzov-ziya.github.io/OverTheWire-Wargames/" target="_blank" class="research-card featured">
-          <div class="card-tag">Project</div>
-          <h3>OverTheWire Bandit Mastery</h3>
-          <p>Technical documentation covering Linux CLI fundamentals and security navigation.</p>
-          <div class="link-label">View Project <i class="fas fa-external-link-alt"></i></div>
+    <section id="writeups" class="section">
+      <p class="label">Publications</p>
+      <h2 class="section-title">Featured Write-ups</h2>
+      <div class="writeups-list">
+        <a href="https://medium.com/@shalbuzov_ziya" target="_blank" class="writeup-item">
+            <div class="writeup-content">
+                <h3>Vulnerability Research & Analysis</h3>
+                <p>Coming soon: Deep dives into security flaws and defensive strategies.</p>
+            </div>
+            <i class="fas fa-chevron-right"></i>
         </a>
-        
-        <a href="https://medium.com/@shalbuzov_ziya" target="_blank" class="research-card">
-          <div class="card-tag">Blog</div>
-          <h3>Medium Security Articles</h3>
-          <p>Deep dives into vulnerabilities, CTF strategies, and cybersecurity trends.</p>
-          <div class="link-label">Read Stories <i class="fas fa-chevron-right"></i></div>
+        <a href="https://shalbuzov-ziya.github.io/OverTheWire-Wargames/" target="_blank" class="writeup-item">
+            <div class="writeup-content">
+                <h3>OverTheWire: Bandit Mastery</h3>
+                <p>Technical walkthrough of Linux security fundamentals and CLI-based challenges.</p>
+            </div>
+            <i class="fas fa-chevron-right"></i>
         </a>
       </div>
     </section>
 
-    <section class="section-padding">
-      <div class="dual-list">
-        <div class="list-group">
-          <h2 class="section-label">Academic Path</h2>
-          <div class="list-item">
-            <strong>Baku State University</strong>
-            <span>B.S. Computer Science (2024 - 2028)</span>
-          </div>
-          <div class="list-item">
-            <strong>TETYM</strong>
-            <span>Cybersecurity Training (2025 - 2026)</span>
-          </div>
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="compact-entry">
+        <div class="entry-header">
+          <h3>Baku State University</h3>
+          <span class="date">2024 — 2028</span>
         </div>
-        <div class="list-group">
-          <h2 class="section-label">Experience</h2>
-          <div class="list-item">
-            <strong>HackerOne</strong>
-            <span>Freelance Security Researcher (2025 - Present)</span>
-          </div>
+        <p class="role">B.S. Computer Science</p>
+      </div>
+      <div class="compact-entry">
+        <div class="entry-header">
+          <h3>TETYM</h3>
+          <span class="date">2025 — 2026</span>
         </div>
+        <p class="role">Cybersecurity Training Program</p>
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <p>© 2025 Ziya Shalbuzov · Azerbaijan</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
