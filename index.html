@@ -1,157 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ziya Shalbuzov | Security Researcher</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body data-theme="light">
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#work">Work</a>
-        <a href="#certs">Credentials</a>
-        <a href="#writeups">Research</a>
-      </div>
-      <button id="themeToggle" class="theme-switch">🌙</button>
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ziya Shalbuzov | Security Researcher</title>
+    <meta name="description" content="19-year-old Security Researcher & Cybersecurity Student exploring vulnerability research and defensive architecture." />
+    <meta name="author" content="Ziya Shalbuzov" />
 
-  <main class="content-wrapper">
-    <section id="home" class="hero">
-      <div class="hero-left">
-        <div class="status-badge">
-          <span class="status-dot"></span> Available for work
-        </div>
-        <h1>Hey, I'm Ziya</h1>
-        <p class="bio">
-          19 year old <strong>Security Researcher</strong> & Cybersecurity Student at Baku State University, 
-          exploring vulnerability research and defensive architecture.
-        </p>
-        <div class="hero-actions">
-          <a href="mailto:ziyashuov@gmail.com" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
-          <a href="https://github.com/shalbuzov-ziya" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
-          <div class="social-row">
-            <a href="https://www.linkedin.com/in/z1ya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/shalbuzov_ziya" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="avatar-circle">
-          <i class="fas fa-user-shield"></i>
-        </div>
-      </div>
-    </section>
+    <meta property="og:title" content="Ziya Shalbuzov | Security Researcher" />
+    <meta property="og:description" content="Security Researcher & Cybersecurity Student exploring vulnerability research and defensive architecture." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <section id="work" class="section">
-      <p class="label">Experience</p>
-      <h2 class="section-title">Professional Background</h2>
-      <div class="work-entry">
-        <div class="entry-header">
-          <h3>HackerOne</h3>
-          <span class="date">Dec 2025 — Present</span>
-        </div>
-        <p class="role">Security Researcher (Freelance)</p>
-        <ul class="bullet-list">
-          <li>Conducting independent vulnerability research and reporting through coordinated disclosure.</li>
-        </ul>
-      </div>
-    </section>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shalbuzov_ziya" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <section id="certs" class="section">
-      <p class="label">Verified</p>
-      <h2 class="section-title">Certifications & Training</h2>
-      <div class="certs-grid">
-        <div class="cert-card">
-          <i class="fas fa-shield-alt"></i>
-          <div class="cert-info">
-            <span class="cert-name">CAPT</span>
-            <span class="cert-issuer">Hackviser</span>
-          </div>
-        </div>
-        <div class="cert-card">
-          <i class="fas fa-network-wired"></i>
-          <div class="cert-info">
-            <span class="cert-name">IT Essentials</span>
-            <span class="cert-issuer">Network Training Center</span>
-          </div>
-        </div>
-        <div class="cert-card">
-          <i class="fas fa-code"></i>
-          <div class="cert-info">
-            <span class="cert-name">Problem Solving (Basic)</span>
-            <span class="cert-issuer">HackerRank</span>
-          </div>
-        </div>
-        <div class="cert-card">
-          <i class="fas fa-user-secret"></i>
-          <div class="cert-info">
-            <span class="cert-name">CPPS</span>
-            <span class="cert-issuer">Phishing Specialist</span>
-          </div>
-        </div>
-        <div class="cert-card">
-          <i class="fas fa-search"></i>
-          <div class="cert-info">
-            <span class="cert-name">Digital Forensics</span>
-            <span class="cert-issuer">Introduction</span>
-          </div>
-        </div>
-        <div class="cert-card">
-          <i class="fas fa-snowflake"></i>
-          <div class="cert-info">
-            <span class="cert-name">Advent of Cyber</span>
-            <span class="cert-issuer">TryHackMe</span>
-          </div>
-        </div>
-      </div>
-    </section>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-HuIXLy8q.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BX_BmJrd.css">
+  </head>
 
-    <section id="writeups" class="section">
-      <p class="label">Publications</p>
-      <h2 class="section-title">Featured Write-ups</h2>
-      <div class="writeups-list">
-        <a href="https://medium.com/@shalbuzov_ziya" target="_blank" class="writeup-item">
-            <div class="writeup-content">
-                <h3>Vulnerability Research & Analysis</h3>
-                <p>Coming soon: Deep dives into security flaws and defensive strategies.</p>
-            </div>
-            <i class="fas fa-chevron-right"></i>
-        </a>
-        <a href="https://shalbuzov-ziya.github.io/OverTheWire-Wargames/" target="_blank" class="writeup-item">
-            <div class="writeup-content">
-                <h3>OverTheWire: Bandit Mastery</h3>
-                <p>Technical walkthrough of Linux security fundamentals and CLI-based challenges.</p>
-            </div>
-            <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Education</h2>
-      <div class="compact-entry">
-        <div class="entry-header">
-          <h3>Baku State University</h3>
-          <span class="date">2024 — 2028</span>
-        </div>
-        <p class="role">B.S. Computer Science</p>
-      </div>
-      <div class="compact-entry">
-        <div class="entry-header">
-          <h3>TETYM</h3>
-          <span class="date">2025 — 2026</span>
-        </div>
-        <p class="role">Cybersecurity Training Program</p>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
